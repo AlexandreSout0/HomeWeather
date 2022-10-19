@@ -7,16 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC18A4B229000A7600F4BF4A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18A4B129000A7600F4BF4A /* HomeView.swift */; };
+		AC18A4B429000A9E00F4BF4A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18A4B329000A9E00F4BF4A /* HomeViewModel.swift */; };
+		AC18A4B629000CA200F4BF4A /* SplashViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18A4B529000CA200F4BF4A /* SplashViewRouter.swift */; };
+		AC18A4BD2900210F00F4BF4A /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18A4BC2900210F00F4BF4A /* HomeViewRouter.swift */; };
+		AC18A4C12900246600F4BF4A /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18A4C02900246600F4BF4A /* ConfigView.swift */; };
+		AC18A4C42900260200F4BF4A /* BLEClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18A4C32900260200F4BF4A /* BLEClient.swift */; };
+		AC46A9FD28FF8885001CC602 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46A9FC28FF8885001CC602 /* SplashView.swift */; };
+		AC46A9FF28FF88B1001CC602 /* SplashUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46A9FE28FF88B1001CC602 /* SplashUiState.swift */; };
+		AC46AA0228FF8B3B001CC602 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC46AA0128FF8B3B001CC602 /* SplashViewModel.swift */; };
 		AC5FBB2F28FF5D5700373328 /* HomeWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5FBB2E28FF5D5700373328 /* HomeWeatherApp.swift */; };
-		AC5FBB3128FF5D5700373328 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5FBB3028FF5D5700373328 /* ContentView.swift */; };
 		AC5FBB3328FF5D5F00373328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5FBB3228FF5D5F00373328 /* Assets.xcassets */; };
 		AC5FBB3628FF5D5F00373328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5FBB3528FF5D5F00373328 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC18A4B129000A7600F4BF4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AC18A4B329000A9E00F4BF4A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AC18A4B529000CA200F4BF4A /* SplashViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewRouter.swift; sourceTree = "<group>"; };
+		AC18A4BC2900210F00F4BF4A /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
+		AC18A4C02900246600F4BF4A /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		AC18A4C32900260200F4BF4A /* BLEClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEClient.swift; sourceTree = "<group>"; };
+		AC46A9FC28FF8885001CC602 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AC46A9FE28FF88B1001CC602 /* SplashUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUiState.swift; sourceTree = "<group>"; };
+		AC46AA0128FF8B3B001CC602 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		AC5FBB2B28FF5D5700373328 /* HomeWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5FBB2E28FF5D5700373328 /* HomeWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeatherApp.swift; sourceTree = "<group>"; };
-		AC5FBB3028FF5D5700373328 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC5FBB3228FF5D5F00373328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5FBB3528FF5D5F00373328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +48,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC18A4AD29000A2200F4BF4A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC18A4B029000A5600F4BF4A /* Model */,
+				AC18A4AF29000A4A00F4BF4A /* ViewModel */,
+				AC18A4AE29000A4200F4BF4A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC18A4AE29000A4200F4BF4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC18A4B129000A7600F4BF4A /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC18A4AF29000A4A00F4BF4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC18A4BC2900210F00F4BF4A /* HomeViewRouter.swift */,
+				AC18A4B329000A9E00F4BF4A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC18A4B029000A5600F4BF4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC18A4B82900119A00F4BF4A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AC18A4BB290011B700F4BF4A /* ViewModel */,
+				AC18A4BA290011AE00F4BF4A /* View */,
+				AC18A4B9290011A400F4BF4A /* Model */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AC18A4B9290011A400F4BF4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC18A4BA290011AE00F4BF4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC18A4C02900246600F4BF4A /* ConfigView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC18A4BB290011B700F4BF4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC18A4C2290025F000F4BF4A /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				AC18A4C32900260200F4BF4A /* BLEClient.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		AC46A9F928FF8837001CC602 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC46A9FC28FF8885001CC602 /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC46A9FA28FF8840001CC602 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC46A9FE28FF88B1001CC602 /* SplashUiState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC46A9FB28FF8849001CC602 /* Spash */ = {
+			isa = PBXGroup;
+			children = (
+				AC46AA0028FF8B1C001CC602 /* ViewModel */,
+				AC46A9FA28FF8840001CC602 /* Model */,
+				AC46A9F928FF8837001CC602 /* View */,
+			);
+			path = Spash;
+			sourceTree = "<group>";
+		};
+		AC46AA0028FF8B1C001CC602 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC46AA0128FF8B3B001CC602 /* SplashViewModel.swift */,
+				AC18A4B529000CA200F4BF4A /* SplashViewRouter.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AC5FBB2228FF5D5700373328 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +176,11 @@
 		AC5FBB2D28FF5D5700373328 /* HomeWeather */ = {
 			isa = PBXGroup;
 			children = (
+				AC18A4C2290025F000F4BF4A /* BLE */,
+				AC18A4B82900119A00F4BF4A /* Config */,
+				AC18A4AD29000A2200F4BF4A /* Home */,
+				AC46A9FB28FF8849001CC602 /* Spash */,
 				AC5FBB2E28FF5D5700373328 /* HomeWeatherApp.swift */,
-				AC5FBB3028FF5D5700373328 /* ContentView.swift */,
 				AC5FBB3228FF5D5F00373328 /* Assets.xcassets */,
 				AC5FBB3428FF5D5F00373328 /* Preview Content */,
 			);
@@ -137,8 +265,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5FBB3128FF5D5700373328 /* ContentView.swift in Sources */,
 				AC5FBB2F28FF5D5700373328 /* HomeWeatherApp.swift in Sources */,
+				AC18A4B429000A9E00F4BF4A /* HomeViewModel.swift in Sources */,
+				AC46A9FD28FF8885001CC602 /* SplashView.swift in Sources */,
+				AC18A4C12900246600F4BF4A /* ConfigView.swift in Sources */,
+				AC46A9FF28FF88B1001CC602 /* SplashUiState.swift in Sources */,
+				AC18A4BD2900210F00F4BF4A /* HomeViewRouter.swift in Sources */,
+				AC18A4C42900260200F4BF4A /* BLEClient.swift in Sources */,
+				AC18A4B229000A7600F4BF4A /* HomeView.swift in Sources */,
+				AC18A4B629000CA200F4BF4A /* SplashViewRouter.swift in Sources */,
+				AC46AA0228FF8B3B001CC602 /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +406,13 @@
 				DEVELOPMENT_TEAM = 6PLG2A5883;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Permitir Bluetooh?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +420,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandresouto.HomeWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,11 +440,13 @@
 				DEVELOPMENT_TEAM = 6PLG2A5883;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Permitir Bluetooh?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +454,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandresouto.HomeWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
