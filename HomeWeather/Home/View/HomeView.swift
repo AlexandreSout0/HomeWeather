@@ -12,7 +12,9 @@ import SwiftUI
 struct HomeView: View {
     
     @ObservedObject var viewModel: HomeViewModel
-    @ObservedObject private var bluetoothViewModel = BluetoothViewModel()
+    @StateObject var viewModel2 = BluetoothViewModel()
+
+   // @ObservedObject private var bluetoothViewModel = BluetoothViewModel()
         
     @State var action: Int? = 0
     @State var navigationHidden: Bool = true
@@ -26,10 +28,11 @@ struct HomeView: View {
                     Text("HomeView")
                     
                     Button("BLE Sent"){
-                        bluetoothViewModel.sendText(text: "Alexandre Souto")
+                        viewModel2.sendText(text: "Alexandre Souto")
                     }
                     
-                    Text(bluetoothViewModel.recebido)
+                    Text(viewModel2.temperatura + "ºC")
+                    Text(viewModel2.umidade + "%")
                     
                 }.navigationBarTitle("Home", displayMode:.inline)
                     .navigationBarHidden(navigationHidden)

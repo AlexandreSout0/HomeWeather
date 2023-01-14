@@ -5,7 +5,9 @@
 //  Created by Alexandre Souto on 19/10/22.
 //
 
+
 import SwiftUI
+import Foundation
 import CoreBluetooth
 
 class HomeViewModel: ObservableObject{
@@ -26,6 +28,8 @@ class BluetoothViewModel: NSObject, ObservableObject {
     
     @Published var recebido = ""
     @Published var enviar = ""
+    @Published var temperatura = ""
+    @Published var umidade = ""
     
     
     var data = Data()
@@ -126,10 +130,22 @@ extension BluetoothViewModel: CBCentralManagerDelegate, CBPeripheralDelegate
         if let characteristicData = characteristic.value, let stringFromData = String(data: characteristicData, encoding: .utf8)
         {
             
+            /*
+             
+             let sayHello = "Hello Swift 4 2017";
+             let result = sayHello.split(separator: " ")
+             print(result)
+             
+             */
+            
             recebido = stringFromData
-           // print(recebido)
+            
+            let pacote = recebido.components(separatedBy: ",")
+            temperatura = pacote[1]
+            umidade = pacote[2]
         }
     }
+    
     
 }
 
